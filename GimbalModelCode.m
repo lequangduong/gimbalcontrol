@@ -149,7 +149,7 @@ P3 = gimbal.num.kin.Tf{3}^-1*(-gimbal.num.kin.Tf{3}(:,4) + Pf);
 
 %syms droneX droneY droneZ objX objY objZ real
 theta_1 = zeros(1,N);
-theta_2 = drone.num.dir(3,:); 
+theta_2 = zeros(1,N); 
 theta_3 = zeros(1,N);
     for i =1:N
         % theta_1 = yaw

@@ -119,16 +119,18 @@ plot_output(gimbal.param.stime, tf, x_lqr, x_mpc, xs, u_lqr, u_mpc, us);
 T = 10;
 ts = 0:gimbal.param.stime:tf;
 t = 0:gimbal.param.stime/T:tf;
-input.theta = [t', x_mpc(1:3,:)'];
+input.theta = [ts', xs(1:3,:)'];
+%input.theta = [t', x_mpc(1:3,:)'];
 input.targetposition = [ts', obj.num.pos'];
 input.quadposition = [ts' drone.num.pos'];
-input.quadrotation = [ts' drone.num.dir'];
+input.quadrotation = [ts' (drone.num.dir)'];%RPY2XYZ
 input.quadposition_line = drone.num.pos';
 input.targetposition_line = obj.num.pos';
 open Kinematics.slx
 %open Dynamics.slx
 
 %% =================== FUNCTION =============
+
 function [u, y, xhat] = lqg_solve(controller,gimbal,drone)
     xs = controller.ref.x;
     us = controller.ref.u; 
