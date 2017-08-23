@@ -455,14 +455,14 @@ for p=1:2*n
     legend(['x^*(',char(p+48),')'],['x(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('rad')
-    title(['Do thi so sanh x_',char(p+48),' bang lqr'])
+    title(['Response of x_',char(p+48),' with lqr'])
 
     subplot(3,2,2)
     plot(ts,xs(p,:),t,x_mpc(p,:))
     legend(['x^*(',char(p+48),')'],['x(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('rad')
-    title(['Do thi so sanh x_',char(p+48),' bang mpc'])
+    title(['Response of x_',char(p+48),' with mpc'])
       
     % zoom in t = 0 -> 0.5 (s)
     subplot(3,2,3)
@@ -470,14 +470,14 @@ for p=1:2*n
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Do thi so sanh x_',char(p+48),' bang lqr',' (zoom t < 0.5s)'])
+    title(['Response of x_',char(p+48),' with lqr',' (zoom t < 0.5s)'])
 
     subplot(3,2,4)
     plot(ts(1:50),xs(p,1:50),t(1:500),x_mpc(p,1:500))
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Do thi so sanh x_',char(p+48),' bang mpc',' (zoom t < 0.5s)'])   
+    title(['Response of x_',char(p+48),' with mpc',' (zoom t < 0.5s)'])   
     
     % zoom in t = 0.5 -> 10 (s)
     subplot(3,2,5)
@@ -485,14 +485,14 @@ for p=1:2*n
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Do thi so sanh x_',char(p+48),' bang lqr',' (zoom t < 0.5s)'])
+    title(['Response of x_',char(p+48),' with lqr',' (zoom t < 0.5s)'])
 
     subplot(3,2,6)
     plot(ts(51:end),xs(p,51:end),t(501:end),x_mpc(p,501:end))
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Do thi so sanh x_',char(p+48),' bang mpc',' (zoom t < 0.5s)'])     
+    title(['Response of x_',char(p+48),' with mpc',' (zoom t < 0.5s)'])     
 end
 % plot u
 for p=1:n
@@ -502,14 +502,14 @@ for p=1:n
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Do thi so sanh u_',char(p+48),' bang lqr'])
+    title(['Response of u_',char(p+48),' with lqr'])
 
     subplot(3,2,2)
     plot(ts,us(p,:),t(1:end-1),u_mpc(p,:))
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Do thi so sanh u_',char(p+48),' bang mpc'])
+    title(['Response of u_',char(p+48),' with mpc'])
     
     % zoom in t = 0 -> 0.5 (s)
     subplot(3,2,3)
@@ -517,14 +517,14 @@ for p=1:n
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Do thi so sanh u_',char(p+48),' bang lqr',' (zoom t < 0.5s)'])
+    title(['Response of u_',char(p+48),' with lqr',' (zoom t < 0.5s)'])
 
     subplot(3,2,4)
     plot(ts(1:50),us(p,1:50),t(1:500),u_mpc(p,1:500))
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Do thi so sanh u_',char(p+48),' bang mpc',' (zoom t < 0.5s)'])  
+    title(['Response of u_',char(p+48),' with mpc',' (zoom t < 0.5s)'])  
     
     % zoom in t = 0.5 -> 10 (s)
     subplot(3,2,5)
@@ -532,14 +532,14 @@ for p=1:n
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Do thi so sanh u_',char(p+48),' bang lqr',' (zoom t < 0.5s)'])
+    title(['Response of u_',char(p+48),' with lqr',' (zoom t < 0.5s)'])
 
     subplot(3,2,6)
     plot(ts(51:end),us(p,51:end),t(501:end-1),u_mpc(p,501:end))
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Do thi so sanh u_',char(p+48),' bang mpc',' (zoom t < 0.5s)'])    
+    title(['Response of u_',char(p+48),' with mpc',' (zoom t < 0.5s)'])    
 end
 
 end
