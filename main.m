@@ -485,14 +485,14 @@ for p=1:2*n
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Response of x_',char(p+48),' with lqr',' (zoom t < 0.5s)'])
+    title(['Response of x_',char(p+48),' with lqr',' (zoom t > 0.5s)'])
 
     subplot(3,2,6)
     plot(ts(51:end),xs(p,51:end),t(501:end),x_mpc(p,501:end))
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Response of x_',char(p+48),' with mpc',' (zoom t < 0.5s)'])     
+    title(['Response of x_',char(p+48),' with mpc',' (zoom t > 0.5s)'])     
 end
 % plot u
 for p=1:n
@@ -532,14 +532,14 @@ for p=1:n
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Response of u_',char(p+48),' with lqr',' (zoom t < 0.5s)'])
+    title(['Response of u_',char(p+48),' with lqr',' (zoom t > 0.5s)'])
 
     subplot(3,2,6)
     plot(ts(51:end),us(p,51:end),t(501:end-1),u_mpc(p,501:end))
     legend(['u^*(',char(p+48),')'],['u(',char(p+48),')'])
     xlabel('t (s)')
     ylabel('Nm')
-    title(['Response of u_',char(p+48),' with mpc',' (zoom t < 0.5s)'])    
+    title(['Response of u_',char(p+48),' with mpc',' (zoom t > 0.5s)'])    
 end
 
 end
