@@ -12,9 +12,9 @@ Step 2: Implement and compare LQR/LQG and MPC control algorithms for the three-a
   
   The video simulation:
   
-    LQG: https://youtu.be/W8o5ViPu-cI
+    [LQG here](https://youtu.be/W8o5ViPu-cI)
 
-    MPC: https://youtu.be/HDwamu4LJnE
+    [MPC here](https://youtu.be/HDwamu4LJnE)
 
 ![1](https://user-images.githubusercontent.com/12315370/29611271-22118e8c-8827-11e7-82a6-7eb7787a9847.jpg)
 ![2](https://user-images.githubusercontent.com/12315370/29611268-21fc8e74-8827-11e7-80ca-cbf95f58dd93.jpg)
