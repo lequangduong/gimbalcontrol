@@ -4,7 +4,7 @@ Step 1: Construct a mathematical model of three-axis Gimbal.
 
   The goal is build a three axis gimbal hanging under drone which have precisely position and direction using to tracking a object           freely move on the the ground. The inverse kinematics problem was solved from input parameters include position of object and             position and direction of drone (or the base link of Gimbal).The results are angles of three links of Gimbal and their value was           entered into Simulink Model that had built using Simscape Multibody toolbox in Matlab.
   
-    Link video simulation here: https://youtu.be/cXD1rDbsp4I
+  [Link video simulation here](https://youtu.be/cXD1rDbsp4I)
         
 Step 2: Implement and compare LQR/LQG and MPC control algorithms for the three-axis Gimbal Model
 
